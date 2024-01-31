@@ -1,0 +1,30 @@
+/* 
+   Q. Accpet number from user and check whether 3rd bit is OFF or OFF
+    choose the next program for good programming practice
+   (we are going to use the term "mask" here. )
+*/
+import java.util.*;
+class Program264
+{
+    public static void main(String arg[])
+    {
+        Scanner sobj = new Scanner(System.in);
+        int iNo = 0;
+        int iMask = 4;
+        int iResult = 0;
+
+        System.out.println("Enter number :");
+        iNo = sobj.nextInt();
+
+        iResult = iNo & iMask;
+        
+        if(iResult == iMask)
+        {
+            System.out.println("3rd bit is ON");
+        }
+        else
+        {
+            System.out.println("3rd bit is OFF");
+        }
+    }
+}
